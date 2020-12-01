@@ -1,0 +1,1 @@
+!async function(){const e=await fetch("https://api.openweathermap.org/data/2.5/weather?q=Merida&appid=e07023ef36e4fb48fc91efb895731682",{mode:"cors"}),o=await e.json();console.log(o.main.temp),console.log(o.name),console.log(o)}();
