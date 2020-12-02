@@ -29,14 +29,14 @@ async function getData(nurl){
 
 
 const Update= (jsonfile)=>{
-  const icon = jsonfile.list[0].weather[0].icon;
-  const url = 'http://openweathermap.org/img/wn/'+icon+'@2x.png';
   for (var i = 0; i < 25; i+=5) {
+    const icon = jsonfile.list[0].weather[0].icon;
+    const url = 'http://openweathermap.org/img/wn/'+icon+'@2x.png';
     const dt = new Date(jsonfile.list[i].dt_txt);
     helper.img('img'+i, url);
     helper.overrite('date'+i,dt.toLocaleDateString());
     helper.overrite('hour'+i,dt.toLocaleTimeString());
-    helper.overrite('Deep0',jsonfile.list[0].weather[0].description );
+    helper.overrite('Deep'+i,jsonfile.list[0].weather[0].description );
  }
 
   helper.overrite('CityName', jsonfile.city.name);
