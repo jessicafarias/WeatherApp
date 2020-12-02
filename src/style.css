@@ -19,3 +19,12 @@ body{
 .weather{
   font-family: 'Alatsi', sans-serif;
 }
+
+#btnFind{
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+}
+input{
+  height: 100%;
+  color: black;
+}
