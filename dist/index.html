@@ -1,1 +1,78 @@
-<!doctype html><html><head><meta charset="UTF-8"></head><body><h1 id="weather"></h1><script src="main.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id = "weather" class="text-center weather m-4">WEATHER REPORT</h1>
+    <div class="row">
+      <div class="col-6 p-3">
+        <div class="location m-4 p-4 d-flex align-content-center justify-content-between">
+          <div>
+            <h2>Mérida</h2>
+            <h3>MX</h3>
+            <img id ="dia1" alt="dia1">
+          </div>
+          <div>
+            <h2>Clear</h2>
+            <h3>Clear sky</h3>
+            <h2>22°C</h2>
+            <h3>71°F</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 p-3">
+        <div class="location m-4 p-4 d-flex flex-column align-content-center justify-content-between">
+          <h2>FORECAST REPORT: </h2>
+          <p>Max temp:<span>23°</span></p>
+          <p>Min temp:<span>23°</span></p>
+          <p>Wind speed:<span>4.47</span></p>
+          <p>Sensation:<span>25°</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!--ROw2-->
+    <div class="row">
+      <div class="col-3">
+        <div class="location ml-4 p-4 ">
+          <h2>City naame</h2>
+          <h3>MONDAY</h3>
+          <p>Description</p>
+          <img id ="dia1" alt="dia1">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="location mr-4 p-4 ">
+          <h2>City naame</h2>
+          <h3>MONDAY</h3>
+          <p>Description</p>
+          <img id ="dia1" alt="dia1">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="location mr-4 p-4 ">
+          <h2>City naame</h2>
+          <h3>MONDAY</h3>
+          <p>Description</p>
+          <img id ="dia1" alt="dia1">
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="location mr-4 p-4 ">
+          <h2>City naame</h2>
+          <h3>MONDAY</h3>
+          <p>Description</p>
+          <img id ="dia1" alt="dia1">
+        </div>
+      </div>
+    </div>
+
+    <form action="form">
+      <label>Write aa city</label>
+      <input type="text" id = "city">
+      <input type="button" value="Search">
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

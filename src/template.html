@@ -2,8 +2,33 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../src/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
   </head>
   <body>
-    <h1 id = "weather"></h1>
+    <div class="d-flex justify-content-center align-items-center">
+      <h1 id = "weather" class="text-center">WEATHER</h1>
+    </div>
+    <div class="p-4">
+      <div class="m-2 p-2">
+        <div class="data-div">
+          <h2>City naame</h2>
+          <h3>MONDAY</h3>
+          <p>Description</p>
+        </div>
+        <div>
+          <div>
+            <p>24</p>
+            <p>25</p>
+          </div>
+          <p>23°</p>
+        </div>
+      </div>
+    </div>
+    <form action="form">
+      <label>Write a city</label>
+      <input type="text" id = "city">
+      <input type="button" value="Search">
+    </form>
   </body>
 </html>

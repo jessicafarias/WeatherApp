@@ -4,16 +4,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HTMLWebpackPlugin({
-      filename: 'index.html',
-      template: './src/template.html',
-      templateParameters: {
-        title: 'Index with template',
-      },
-    }),
-  ],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
