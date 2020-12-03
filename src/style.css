@@ -1,44 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans+Condensed:wght@300&display=swap');
-*{
+
+* {
   color: white;
 }
-.location{
+
+.location {
   background: rgba(225, 226, 238, 0.123);
   color: white;
   z-index: 2;
   border-radius: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
-body{
-  background: linear-gradient(0deg, rgba(2,111,134,1) 0%, rgba(59,199,190,1) 100%);
+
+body {
+  background: linear-gradient(0deg, rgba(2, 111, 134, 1) 0%, rgba(59, 199, 190, 1) 100%);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Alatsi', sans-serif;
-};
+}
 
-.weather{
+.weather {
   font-family: 'Alatsi', sans-serif;
 }
 
-#btnFind{
+#btnFind {
   border: 1px solid white;
   color: rgb(255, 255, 255);
 }
-input{
+
+input {
   height: 100%;
   color: black;
 }
 
-.toggle{
+.toggle {
   cursor: pointer;
   border-bottom: 2px solid rgba(112, 115, 131, 0.274);
 }
-.selected{
+
+.selected {
   border: 2px solid rgba(112, 115, 131, 0.274);
   border-bottom: none;
   cursor: pointer;
 }
 
-.divide{
+.divide {
   border-bottom: 2px solid rgba(112, 115, 131, 0.274);
 }

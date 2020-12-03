@@ -40,4 +40,3 @@ module.exports = {
 
   watch: true,
 };
-
