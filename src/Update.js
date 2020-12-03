@@ -1,6 +1,6 @@
 import * as helper from './style_helpers';
 
-const toFahrenheit = (kelvin) => `${parseInt(kelvin - 273.15, 10) * (9 / 5) + 32}°F`;
+const toFahrenheit = (kelvin) => `${parseInt((kelvin - 273.15) * (9 / 5) + 32, 10)}°F`;
 const toCelsius = (kelvin) => `${parseInt(kelvin - 273.15, 10)}°C`;
 
 export const celsius = (jsonfile) => {
