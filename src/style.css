@@ -28,3 +28,17 @@ input{
   height: 100%;
   color: black;
 }
+
+.toggle{
+  cursor: pointer;
+  border-bottom: 2px solid rgba(112, 115, 131, 0.274);
+}
+.selected{
+  border: 2px solid rgba(112, 115, 131, 0.274);
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.divide{
+  border-bottom: 2px solid rgba(112, 115, 131, 0.274);
+}
