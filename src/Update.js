@@ -1,5 +1,8 @@
 import * as helper from './style_helpers';
 
+const toFahrenheit = (kelvin) => `${parseInt(kelvin - 273.15, 10) * (9 / 5) + 32}°F`;
+const toCelsius = (kelvin) => `${parseInt(kelvin - 273.15, 10)}°C`;
+
 export const celsius = (jsonfile) => {
   for (let i = 0; i < 25; i += 5) {
     const { icon } = jsonfile.list[0].weather[0];
@@ -14,12 +17,12 @@ export const celsius = (jsonfile) => {
   helper.overrite('CityName', jsonfile.city.name);
   helper.overrite('CountryName', jsonfile.city.country);
   helper.overrite('Weather', jsonfile.list[0].weather[0].main);
-  helper.overrite('TempC', `${parseInt(jsonfile.list[0].main.temp - 273.15, 10)}°C`);
-  helper.overrite('TempF', `${parseInt(jsonfile.list[0].main.temp - 273.15, 10) * (9 / 5) + 32}°F`);
-  helper.overrite('MaxTemp', `${parseInt(jsonfile.list[0].main.temp_max - 273.15, 10)}°C`);
-  helper.overrite('MinTemp', `${parseInt(jsonfile.list[0].main.temp_min - 273.15, 10)}°C`);
+  helper.overrite('TempC', toCelsius(jsonfile.list[0].main.temp));
+  helper.overrite('TempF', toFahrenheit(jsonfile.list[0].main.temp));
+  helper.overrite('MaxTemp', toCelsius(jsonfile.list[0].main.temp_max));
+  helper.overrite('MinTemp', toCelsius(jsonfile.list[0].main.temp_min));
   helper.overrite('WindSpeed', jsonfile.list[0].wind.speed);
-  helper.overrite('SensationTemp', `${parseInt(jsonfile.list[0].main.feels_like - 273.15, 10)}°C`);
+  helper.overrite('SensationTemp', toCelsius(jsonfile.list[0].main.feels_like));
 };
 
 
@@ -37,10 +40,10 @@ export const fahrenheit = (jsonfile) => {
   helper.overrite('CityName', jsonfile.city.name);
   helper.overrite('CountryName', jsonfile.city.country);
   helper.overrite('Weather', jsonfile.list[0].weather[0].main);
-  helper.overrite('TempC', `${parseInt(jsonfile.list[0].main.temp - 273.15, 10) * (9 / 5) + 32}°F`);
-  helper.overrite('TempF', `${parseInt(jsonfile.list[0].main.temp - 273.15, 10)}°C`);
-  helper.overrite('MaxTemp', `${parseInt(jsonfile.list[0].main.temp_max - 273.15, 10) * (9 / 5) + 32}°F`);
-  helper.overrite('MinTemp', `${parseInt(jsonfile.list[0].main.temp - 273.15, 10) * (9 / 5) + 32}°F`);
+  helper.overrite('TempC', toFahrenheit(jsonfile.list[0].main.temp));
+  helper.overrite('TempF', toCelsius(jsonfile.list[0].main.temp));
+  helper.overrite('MaxTemp', toFahrenheit(jsonfile.list[0].main.temp_max));
+  helper.overrite('MinTemp', toFahrenheit(jsonfile.list[0].main.temp_min));
   helper.overrite('WindSpeed', jsonfile.list[0].wind.speed);
-  helper.overrite('SensationTemp', `${parseInt(jsonfile.list[0].main.feels_like - 273.15, 10) * (9 / 5) + 32}°F`);
+  helper.overrite('SensationTemp', toFahrenheit(jsonfile.list[0].main.feels_like));
 };

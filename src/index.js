@@ -14,10 +14,11 @@ async function getData(nurl) {
       helper.unstyle('btnC', 'selected');
       helper.style('btnC', 'toggle');
       helper.style('btnF', 'selected');
+      helper.style('error', 'd-none');
       Update.celsius(jsonfile);
     }
   } else {
-    alert('No found, try again');
+    helper.unstyle('error', 'd-none');
   }
 }
 
