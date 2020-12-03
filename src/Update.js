@@ -23,7 +23,7 @@ export const celsius= (jsonfile)=>{
 }
 
 
-export const farenheit= (jsonfile)=>{
+export const fahrenheit= (jsonfile)=>{
   for (var i = 0; i < 25; i+=5) {
     const icon = jsonfile.list[0].weather[0].icon;
     const url = 'http://openweathermap.org/img/wn/'+icon+'@2x.png';

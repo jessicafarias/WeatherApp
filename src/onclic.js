@@ -11,7 +11,7 @@ const Onclic=(jsonfile) =>{
   });
 
   helper.btn('btnC', ()=>{
-    Update.farenheit(jsonfile);
+    Update.fahrenheit(jsonfile);
     helper.unstyle('btnF','selected')
     helper.style('btnF','toggle')
     helper.style('btnC','selected')
