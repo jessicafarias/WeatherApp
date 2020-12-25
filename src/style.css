@@ -17,6 +17,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Alatsi', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 .weather {
