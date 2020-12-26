@@ -8,7 +8,7 @@ export const celsius = (jsonfile) => {
     const { icon } = jsonfile.list[0].weather[0];
     const url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
     const dt = new Date(jsonfile.list[i].dt_txt);
-    helper.img(`img${i}`, url);
+    helper.img(`img${i}`, url, 'imagen');
     helper.overrite(`date${i}`, dt.toLocaleDateString());
     helper.overrite(`hour${i}`, dt.toLocaleTimeString());
     helper.overrite(`Deep${i}`, jsonfile.list[0].weather[0].description);
@@ -31,7 +31,7 @@ export const fahrenheit = (jsonfile) => {
     const { icon } = jsonfile.list[0].weather[0];
     const url = `http://openweathermap.org/img/wn/${icon}@2x.png`;
     const dt = new Date(jsonfile.list[i].dt_txt);
-    helper.img(`img${i}`, url);
+    helper.img(`img${i}`, url,'imagen');
     helper.overrite(`date${i}`, dt.toLocaleDateString());
     helper.overrite(`hour${i}`, dt.toLocaleTimeString());
     helper.overrite(`Deep${i}`, jsonfile.list[0].weather[0].description);

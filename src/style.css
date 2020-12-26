@@ -10,6 +10,7 @@
   z-index: 2;
   border-radius: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
 }
 
 body {
@@ -48,4 +49,8 @@ input {
 
 .divide {
   border-bottom: 2px solid rgba(112, 115, 131, 0.274);
+}
+
+.imagen{
+  min-width: 150px;
 }

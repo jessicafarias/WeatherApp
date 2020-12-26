@@ -8,9 +8,10 @@ export const unstyle = (parentId, ...styles) => {
   parent.classList.remove(...styles);
 };
 
-export const img = (imgId, src) => {
+export const img = (imgId, src, ...styles) => {
   const imagen = document.getElementById(imgId);
   imagen.src = src;
+  imagen.classList.add(...styles);
 };
 
 export const btn = (btnId, onclick, ...styles) => {
